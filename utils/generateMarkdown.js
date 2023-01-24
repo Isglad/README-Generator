@@ -33,6 +33,56 @@ This application is covered under the ${license} license.
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {}
+function generateMarkdown(data) {
+  var badge = renderLicenseBadge(data.license);
+  var licenseLink = renderLicenseLink(data.license);
+  var licenseSection = renderLicenseSection(data.license);
+  // use user's username to retrieve their github link
+  var githublink = `https://github.com/${data.username}`
+  // create an array that stores installation instructions that are splitted by comma
+  var installationArr = data.installation.split(",")
+  var installationSection = "";
+  // loop over each installation instruction and display each on its line
+  installationArr.forEach((currentValue) => {
+    installationSection +=`
+\n${currentValue}`;
+  })
+
+  return `${badge}\n # ${data.title}
+
+## Description
+${data.description}
+
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+${licenseLink}
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+
+## Installation
+${installationSection}
+
+## Usage
+
+${data.usage}
+${licenseSection}
+## Contributing
+
+${data.contribution}
+
+## Tests
+
+${data.test}
+
+## Questions
+
+If you have any questions,please reach out to me via my contact information listed below:\n
+My GitHub username: ${data.username}\n
+My GitHub profile: ${githublink}\n
+My email: ${data.email}`;
+}
 
 module.exports = generateMarkdown;
