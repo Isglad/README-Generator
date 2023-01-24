@@ -4,7 +4,6 @@ const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown.js")
 
 // TODO: Create an array of questions for user input
-
 const questions = [
     "What is the title of your project?",
     "Please provide a short description of your project",
@@ -18,6 +17,11 @@ const questions = [
   ];
 
 // TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, `${data}`, (err) => {
+        err ? console.error(err) : console.log("SampleREADME.md has been successfully generated!")
+    })
+}
 
 // TODO: Create a function to initialize app
 function init() {}
