@@ -1,8 +1,8 @@
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
- # README Generator
+ # Professional README Generator
 
 ## Description
-A command-line application that dynamically generates a professional README file for your projects.
+A command-line application that dynamically generates a professional README file for your projects. This allows you to devote more time to working on the project.
 
 ## Table of Contents
 
@@ -18,13 +18,13 @@ A command-line application that dynamically generates a professional README file
 
 Visit the Node.js website to download and install Node.js to your computer
 
-Clone the repository to your local directory
+ Clone the repository to your local directory
 
-Create a .gitignore file that includes "node_modules/"  and  " .DS_Store/" and make sure to do this before installing any npm dependencies
+ Create a .gitignore file that includes "node_modules/"  and  " .DS_Store/" and make sure to do this before installing any npm dependencies.
 
-Run `npm init` to include a `package.json` to your repo with required dependencies.
+ Run `npm init` to include a `package.json` to your repo with required dependencies.
 
-Run `npm i inquirer@8.2.4` to install inquirer module
+ Run `npm i inquirer@8.2.4` to install inquirer module.
 
 ## Usage
 
@@ -36,7 +36,7 @@ This application is covered under the MIT license.
      
 ## Contributing
 
-Contributions to the README Generator are all welcome. Please follow these steps to contribute: Fork the repository, Create a new branch for your feature or bug fix, Make your changes and commit them, 			§ Submit a pull request to the main repository.
+		○ Contributions to the README Generator are all welcome. Please follow these steps to contribute:
 
 ## Tests
 

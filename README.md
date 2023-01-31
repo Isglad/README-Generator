@@ -13,7 +13,7 @@
 
 A command-line application that dynamically generates a professional README file for your projects. This allows you to devote more time to working on the project.
 
-[Link to the README Generator App](https://drive.google.com/file/d/1GCMFJXYBD-mgij5o6YD2_vjLDfAfLkAN/view)
+[Link to the README Generator App](https://drive.google.com/file/d/1ozNOeMBnInTSKzI55Q7rvedPyYH0lf_2/view)
 
 
 ![Generated README video record](/images/generated%20README.gif)
